@@ -5,17 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  type: vless
-  server: 220.246.184.228
-  port: 443
-  uuid: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
+  type: vmess
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16116
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  servername: updates.cdn-apple.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
