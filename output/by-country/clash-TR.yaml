@@ -12,12 +12,10 @@ proxies:
   password: rSeYcig_XBy8q3k33NpK3A
   udp: true
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  type: vmess
-  server: 188.132.174.236
-  port: 2086
-  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 188.132.237.20
+  port: 2095
+  uuid: 3b9e513e-30d9-4ca8-8340-8f33fc6710de
   udp: true
   tls: false
   skip-cert-verify: true
