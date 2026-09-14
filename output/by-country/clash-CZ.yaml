@@ -6,32 +6,45 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 103.119.18.30
-  port: 443
-  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
+  server: 188.114.97.6
+  port: 8080
+  uuid: f2f4e2dc-3e7b-402f-a461-b48acc6aa310
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: mianfei-73q.pages.dev
   network: ws
   ws-opts:
-    path: /proxyip=154.3.33.43
+    path: /eyJqdW5rIjoid2JBOTRVclNMOVdBSVQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
     headers:
-      Host: mianfei-73q.pages.dev
+      Host: steep-bonus-8e6a.amirhon1376.workers.dev
 - name: 🇨🇿 CZ 02 - xiaohe
   type: vless
-  server: 103.119.18.30
+  server: 172.67.174.249
   port: 443
-  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
+  uuid: 26b35808-f1e1-4b97-8c69-46796f058d8b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mianfei-73q.pages.dev
+  servername: ezaccess-project-9138d4.5f6on.workers.dev
   network: ws
   ws-opts:
-    path: /proxyip=154.3.33.43
+    path: /eyJqdW5rIjoicG9pMkt4TDY2TVNtRSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: mianfei-73q.pages.dev
+      Host: ezaccess-project-9138d4.5f6on.workers.dev
+- name: 🇨🇿 CZ 03 - xiaohe
+  type: vless
+  server: 172.66.44.124
+  port: 8443
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +52,7 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
+  - 🇨🇿 CZ 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +60,6 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
+  - 🇨🇿 CZ 03 - xiaohe
 rules:
 - MATCH,PROXIES
