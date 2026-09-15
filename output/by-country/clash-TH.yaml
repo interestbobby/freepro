@@ -6,18 +6,17 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - xiaohe
   type: vless
-  server: 43.133.110.81
-  port: 443
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  server: 188.114.97.6
+  port: 8080
+  uuid: 4070e7c9-a412-4ed0-a5fa-fdb455451d2c
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
+    path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+      Host: icy-sky-53f2.9-e8e.workers.dev
 - name: 🇹🇭 TH 02 - xiaohe
   type: vless
   server: 43.133.110.81
