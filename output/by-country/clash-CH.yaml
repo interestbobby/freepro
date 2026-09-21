@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - xiaohe
   type: vless
+  server: 162.159.153.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
+- name: 🇨🇭 CH 02 - xiaohe
+  type: vless
   server: 104.21.117.9
   port: 443
   uuid: bd9ff08b-d042-3650-48e4-c4b400000000
@@ -18,7 +32,7 @@ proxies:
     path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
     headers:
       Host: netlivpn2950.bbxff.workers.dev
-- name: 🇨🇭 CH 02 - xiaohe
+- name: 🇨🇭 CH 03 - xiaohe
   type: vless
   server: 188.114.97.6
   port: 8080
@@ -31,7 +45,21 @@ proxies:
     path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
     headers:
       Host: netlivpn2950.bbxff.workers.dev
-- name: 🇨🇭 CH 03 - xiaohe
+- name: 🇨🇭 CH 04 - xiaohe
+  type: vless
+  server: 162.159.153.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
+- name: 🇨🇭 CH 05 - xiaohe
   type: vless
   server: 104.18.28.234
   port: 443
@@ -45,20 +73,6 @@ proxies:
     path: /
     headers:
       Host: netlivpn5505.ffffdsaaa.workers.dev
-- name: 🇨🇭 CH 04 - xiaohe
-  type: vless
-  server: 89.127.196.14
-  port: 443
-  uuid: 70697368-0000-4000-8000-676100000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: zzysieoge63.uurot7rjj8.workers.dev
-  network: ws
-  ws-opts:
-    path: /pishgaman-technology
-    headers:
-      Host: zzysieoge63.uurot7rjj8.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,6 +82,7 @@ proxy-groups:
   - 🇨🇭 CH 02 - xiaohe
   - 🇨🇭 CH 03 - xiaohe
   - 🇨🇭 CH 04 - xiaohe
+  - 🇨🇭 CH 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,5 +92,6 @@ proxy-groups:
   - 🇨🇭 CH 02 - xiaohe
   - 🇨🇭 CH 03 - xiaohe
   - 🇨🇭 CH 04 - xiaohe
+  - 🇨🇭 CH 05 - xiaohe
 rules:
 - MATCH,PROXIES
