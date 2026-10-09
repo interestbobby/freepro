@@ -1,0 +1,33 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇰🇬 KG 01 - xiaohe
+  type: vless
+  server: 104.21.23.72
+  port: 8880
+  uuid: 8dd8af16-cae0-4431-b04c-a637b4d7645b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: wild-frog-c709.403-6ff.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇰🇬 KG 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇰🇬 KG 01 - xiaohe
+rules:
+- MATCH,PROXIES
