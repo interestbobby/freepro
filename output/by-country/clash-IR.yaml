@@ -4,33 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  type: vmess
-  server: 172.67.195.146
+- name: 🇮🇷 IR 01 - xiaohe
+  type: vless
+  server: 85.133.244.214
   port: 443
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  alterId: 0
-  cipher: auto
+  uuid: fb5c43f4-bd23-453d-a3cf-45ad5b9c020b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: aus.lovehk.xyz
   network: ws
   ws-opts:
-    path: /Sydney3
+    path: /
     headers:
-      Host: aus.lovehk.xyz
+      Host: 85.133.244.214
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+  - 🇮🇷 IR 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+  - 🇮🇷 IR 01 - xiaohe
 rules:
 - MATCH,PROXIES
